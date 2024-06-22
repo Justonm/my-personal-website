@@ -1,3 +1,162 @@
+/* styles.css */
+
 body {
-    background: blue;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #5568c5;
+}
+
+header {
+    background-color: #430ebf;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    position: fixed;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: sticky;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #000000;
+    font-weight: bold;
+}
+
+.container {
+    position: relative;
+    width: 50%;
+    margin: auto;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.text {
+    position: fixed;
+    top: 10%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    text-align: right;
+    background-color: rgba(41, 60, 237, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.text a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.text a :hover {
+    animation: ease-in-out;
+    font-weight: bolder;
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+section#home {
+    background-color: #f4f4f4;
+}
+
+section#about,
+section#services,
+section#contact {
+    background-color: #fff;
+}
+
+h1,
+h2 {
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 0.5rem 0;
+    text-align: left;
+}
+
+.mywebsites li {
+    text-align: left;
+}
+
+.mywebsites li a {
+    text-decoration: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form label {
+    margin: 0.5rem 0;
+    align-self: flex-start;
+}
+
+form input,
+form textarea {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 10px 10px 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 50px;
+}
+
+form button:hover {
+    background-color: #ff6347;
+}
+
+footer {
+    background-color: #430ebf;
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }

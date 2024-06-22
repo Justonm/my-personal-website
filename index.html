@@ -1,11 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Personal Website</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <script src="js/script.js"></script>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home">
+      <div class="container">
+        <img
+          src="images/justusmutuku image.jpg"
+          alt="Justus Mutuku Image"
+          class="image"
+        />
+        <div class="text">
+          Call:<a href="tel:+254725277198">0726 277 198</a>
+        </div>
+      </div>
+      <h1>Welcome to My Portfolio</h1>
+      <p>
+        I am a web developer with a passion for creating beautiful and
+        functional websites using HTML, CSS, and WordPress.
+      </p>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Hello! I'm Justus Mutuku, a dedicated web developer with extensive
+        experience in HTML, CSS, and WordPress. I specialize in crafting
+        responsive, user-friendly websites that not only look great but also
+        provide a seamless user experience. With a strong foundation in
+        front-end and back-end technologies, I am committed to bringing your
+        vision to life.
+      </p>
+    </section>
+
+    <section id="services">
+      <h2>Services</h2>
+      <ul>
+        <li>
+          <strong>Website Development:</strong> Building customized, responsive
+          websites using HTML, CSS, and WordPress.
+        </li>
+        <li>
+          <strong>Social Media Page Management:</strong> Managing and optimizing
+          your social media presence to engage with your audience effectively.
+        </li>
+        <li>
+          <strong>Search Engine Optimization (SEO):</strong> Implementing SEO
+          best practices to improve your website's visibility and ranking on
+          search engines.
+        </li>
+        <li>
+          <strong>Graphic Design:</strong> Creating visually appealing graphics
+          and designs to enhance your brand identity.
+        </li>
+      </ul>
+      <h2>LIST OF WEBSITES I HAVE DEVELOPED</h2>
+      <ol class="mywebsites">
+        <li>
+          <a href="https://www.premiercarehospitalgroup.com/" target="_blank">
+           Premiercare Hospital Group</a
+          >
+        </li>
+        <li>
+          <a href="https://www.machakosgolfclub.com/" target="_blank">Machakos Golf Club</a>
+        </li>
+        <li>
+          <a href="https://www.themakuenischool.com/"target="_blank">The Makueni School</a>
+        </li>
+        <li>
+          <a href="https://www.cierraperfumes.com/"target="_blank">Cierra Perfumes</a>
+        </li>
+      </ol>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Justus Mutuku. All Rights Reserved.</p>
+    </footer>
   </body>
 </html>
